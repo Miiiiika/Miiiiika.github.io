@@ -1,0 +1,44 @@
+body {
+	background-color: RGB(161,156,122);
+}
+#mikaTitle {
+	position: relative;
+	top: 15px;
+}
+h2 {
+	text-align:center;
+}
+.mainDiv {
+	border: 2px solid black;
+	width: 65%;
+	height: 1000px;
+	margin: auto;
+	background-color: RGB(209,203,153);
+	position: relative;
+}
+.topTable {
+	width: 100%;
+	position:fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: RGB(194,194,194);
+	border: 3px solid black;
+}
+.topData {
+	border: 3px outset red;
+	text-align: center;
+}
+.topData:hover {
+	border: 3px inset red;
+	text-align: center;
+}
+.education, .projects, .skills {
+	background-color: RGB(209,203,153);
+	width:32.84%;
+	border:2px solid black;
+	float: left;
+	height: 280px;
+	text-align:left;
+	padding:1px;
+}
