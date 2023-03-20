@@ -1,9 +1,14 @@
 body {
 	background-color: RGB(161,156,122);
 }
-#mikaTitle {
-	position: relative;
-	top: 15px;
+.thingsBody {
+	background-color: RGB(93,105,166);
+}
+.photosBody {
+	background-color: RGB(143,87,89);
+}
+.socialBody {
+	background-color: RGB(69,102,53);
 }
 h2 {
 	text-align:center;
@@ -14,6 +19,31 @@ h2 {
 	height: 1000px;
 	margin: auto;
 	background-color: RGB(209,203,153);
+	position: relative;
+}
+.thingsDiv {
+	border: 2px solid black;
+	width: 65%;
+	height: 1000px;
+	margin: auto;
+	background-color: RGB(167,175,217);
+	position: relative;
+	padding: 5px;
+}
+.photosDiv {
+	border: 2px solid black;
+	width: 65%;
+	height: 1000px;
+	margin: auto;
+	background-color: RGB(189,108,110);
+	position: relative;
+}
+.socialDiv {
+	border: 2px solid black;
+	width: 65%;
+	height: 1000px;
+	margin: auto;
+	background-color: RGB(122,148,109);
 	position: relative;
 }
 .topTable {
@@ -41,4 +71,8 @@ h2 {
 	height: 280px;
 	text-align:left;
 	padding:1px;
+}
+#mikaTitle {
+	position: relative;
+	top: 15px;
 }
