@@ -1,5 +1,5 @@
 body {
-	background-color: RGB(161,156,122);
+	background-color: RGB(55,89,92);
 }
 .thingsBody {
 	background-color: RGB(93,105,166);
@@ -18,7 +18,7 @@ h2 {
 	width: 65%;
 	height: 1000px;
 	margin: auto;
-	background-color: RGB(209,203,153);
+	background-color: RGB(137,171,173);
 	position: relative;
 }
 .thingsDiv {
@@ -63,14 +63,28 @@ h2 {
 	border: 3px inset red;
 	text-align: center;
 }
-.education, .projects, .skills {
-	background-color: RGB(209,203,153);
-	width:32.84%;
+.education {
+	background-color: RGB(161,201,204);
+	width:100%;
 	border:2px solid black;
+}
+.table1 {
+	border: 1px solid black;
+}
+.informalDiv {
+	border: 1px solid black;
+	background-color: RGB(161,201,204);
+	height: 200px;
+}
+#pfpImage, #pfpImage2 {
+	height: 200px;
+	width: 200px;
+}
+#pfpImage {
 	float: left;
-	height: 280px;
-	text-align:left;
-	padding:1px;
+}
+#pfpImage2 {
+	float: right;
 }
 #mikaTitle {
 	position: relative;
