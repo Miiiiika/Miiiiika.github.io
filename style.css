@@ -16,10 +16,11 @@ h2 {
 .mainDiv {
 	border: 2px solid black;
 	width: 65%;
-	height: 1000px;
+	height: 700px;
 	margin: auto;
 	background-color: RGB(137,171,173);
 	position: relative;
+	padding: 5px;
 }
 .thingsDiv {
 	border: 2px solid black;
@@ -37,6 +38,7 @@ h2 {
 	margin: auto;
 	background-color: RGB(189,108,110);
 	position: relative;
+	padding: 5x;
 }
 .socialDiv {
 	border: 2px solid black;
@@ -45,6 +47,7 @@ h2 {
 	margin: auto;
 	background-color: RGB(122,148,109);
 	position: relative;
+	padding: 5px;
 }
 .topTable {
 	width: 100%;
@@ -65,8 +68,9 @@ h2 {
 }
 .education {
 	background-color: RGB(161,201,204);
+	height: 100px;
 	width:100%;
-	border:2px solid black;
+	border:1px solid black;
 }
 .table1 {
 	border: 1px solid black;
@@ -77,6 +81,15 @@ h2 {
 	height: 200px;
 	overflow-x: hidden;
       overflow-y: auto;
+}
+.formalDiv {
+	position: relative;
+	top: 110px;
+	border: 1px solid black;
+	background-color: RGB(161,201,204);
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: auto;
 }
 #pfpImage, #pfpImage2 {
 	height: 200px;
@@ -91,4 +104,20 @@ h2 {
 #mikaTitle {
 	position: relative;
 	top: 15px;
+}
+.mediaDiv {
+	border: 1px solid black;
+	background-color: RGB(183,191,232);
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: auto;
+}
+.mediaImage {
+	height:200px;
+	width:200px;
+	float: left;
+}
+.inlineMedia {
+	border:1px solid black;
+	height: 200px;
 }
