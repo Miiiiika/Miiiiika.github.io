@@ -19,23 +19,21 @@ h2 {
 .mainDiv {
 	border: 2px solid black;
 	width: 65%;
-	height: 850px;
+	height: 100%;
 	margin: auto;
 	background-color: RGB(137,171,173);
 	padding: 5px;
 	position: relative;
 	padding: 5px;
-	overflow: scroll;
 }
 .thingsDiv {
 	border: 2px solid black;
 	width: 65%;
-	height: 1000px;
+	height: 100%;
 	margin: auto;
 	background-color: RGB(167,175,217);
 	position: relative;
 	padding: 5px;
-	overflow: scroll;
 }
 .photosDiv {
 	border: 2px solid black;
@@ -77,6 +75,7 @@ h2 {
 .topData {
 	border: 3px outset red;
 	text-align: center;
+	cursor: pointer;
 }
 .topData:hover {
 	border: 3px inset red;
@@ -100,8 +99,6 @@ h2 {
       overflow-y: auto;
 }
 .formalDiv {
-	position: relative;
-	top: 50px;
 	padding: 5px;
 	border: 1px solid black;
 	background-color: RGB(161,201,204);
@@ -110,8 +107,6 @@ h2 {
 	height: auto;
 }
 .whyDiv {
-	position: relative;
-	top: 100px;
 	padding: 5px;
 	border: 1px solid black;
 	background-color: RGB(161,201,204);
