@@ -32,6 +32,7 @@ h2 {
 	background-color: RGB(167,175,217);
 	position: relative;
 	padding: 5px;
+	overflow: scroll;
 }
 .photosDiv {
 	border: 2px solid black;
@@ -118,9 +119,11 @@ h2 {
 #mikaTitle {
 	position: relative;
 	top: 15px;
+	text-align:center;
 }
 .mediaDiv {
 	border: 1px solid black;
+	padding: 2px;
 	background-color: RGB(183,191,232);
 	overflow-x: hidden;
 	overflow-y: auto;
