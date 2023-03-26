@@ -1,0 +1,67 @@
+button:hover {
+	cursor: pointer;
+}
+
+.codeDiv {
+	border: 2px ridge lightgreen;
+	width: 65%;
+	height: 1000px;
+	margin: auto;
+	background-color: RGB(31,31,31);
+	color: lightgreen;
+	position: relative;
+	padding: 5px;
+}
+.codeBody {
+	background-color: black;
+}
+.topTable {
+	width: 100%;
+	position:fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: RGB(194,194,194);
+	border: 3px solid black;
+}
+.topData {
+	border: 3px outset red;
+	text-align: center;
+	cursor: pointer;
+}
+.topData:hover {
+	border: 3px inset red;
+	text-align: center;
+}
+#mikaTitle {
+	position: relative;
+	top: 20px;
+	text-align:center;
+}
+
+
+
+.cookieGame {
+	border: 1px solid lightgreen;
+	width: 40%;
+	height: 40%;
+	overflow: scroll;
+}
+.rightSide {
+	border: 1px solid lightgreen;
+	margin: auto;
+	width: 70%;
+	height: 80%;
+	float: right;
+	padding: 5px;
+}
+#clickerBox {
+	cursor: pointer;
+}
+.clickerTable, td {
+	margin: auto;
+	margin-top: 25%;
+}
+#numberOfBoxes {
+	text-align: center;
+}

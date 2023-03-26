@@ -10,9 +10,6 @@ body {
 .socialBody {
 	background-color: RGB(69,102,53);
 }
-.codeBody {
-	background-color: black;
-}
 h2 {
 	text-align:center;
 }
@@ -50,16 +47,6 @@ h2 {
 	height: 1000px;
 	margin: auto;
 	background-color: RGB(122,148,109);
-	position: relative;
-	padding: 5px;
-}
-.codeDiv {
-	border: 2px solid black;
-	width: 65%;
-	height: 1000px;
-	margin: auto;
-	background-color: RGB(31,31,31);
-	color: lightgreen;
 	position: relative;
 	padding: 5px;
 }

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Mika's Cool Website V1</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="javaStyle.css">
 	<link rel="icon" type="image/png" sizes="32x32" href="pfp.jpg">
 </head>
 <body class="codeBody">
@@ -17,9 +17,28 @@
 	</table>
 	<h1 id="mikaTitle" style="color:lightgreen">Cool code! Wow!</h1>
 	<div class="codeDiv">
-	<p>Seen below: the coolest fucking random number generator (between 0 and 10) you have ever seen.</p>
-	<button onclick="randomNumber()">button!</button>
-	<p id="winning">Some number here</p>
+		<p>Seen below: the coolest fucking random number generator (between 0 and <input type="text" id="value" size="1" maxlength="3">) you have ever seen.</p>
+		<button onclick="randomNumber()">button!</button>
+		<p id="winning">Some number here</p>
+		<div class="cookieGame">
+			<h2 style="text-align:center">Clicker Game</h2>
+			<table class="clickerTable">
+				<tr>
+					<td><img src="CookieGame/BoxClick.png" id="clickerBox" onclick="boxClick()"></td>
+				</tr>
+				<tr>
+					<td><p id="numberOfBoxes">0</p></td>
+				</tr
+			</table>
+			<div class="rightSide">
+				<h4>Pixel Market</h4>
+				<p>Pixels add 0.1 boxes every second automatically. Buying one increases the price of the next one by 5%.</p>
+				<button onclick="newPixel()">Add one pixel</button>
+				<p>Pixels: <span id="numberOfPixels">0</span></p>
+				<p>Boxes per second: <span id="boxesPerSecond">0</span></p>
+				<p>Cost of one pixel: <span id="boxesCost">10</span></p>
+			</div>
+		</div>
 	</div>
 </body>
 <script src="main.js">
