@@ -57,6 +57,8 @@ button:hover {
 }
 #clickerBox {
 	cursor: pointer;
+	height: 100%;
+	width: 100%;
 }
 .clickerTable, td {
 	margin: auto;
@@ -64,4 +66,10 @@ button:hover {
 }
 #numberOfBoxes {
 	text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+	.cookieGame {
+	width: 100%;
+ 	}
 }

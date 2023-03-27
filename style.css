@@ -20,8 +20,6 @@ h2 {
 	margin: auto;
 	background-color: RGB(137,171,173);
 	padding: 5px;
-	position: relative;
-	padding: 5px;
 }
 .thingsDiv {
 	border: 2px solid black;
@@ -29,7 +27,6 @@ h2 {
 	height: 100%;
 	margin: auto;
 	background-color: RGB(167,175,217);
-	position: relative;
 	padding: 5px;
 }
 .photosDiv {
@@ -38,7 +35,6 @@ h2 {
 	height: 1000px;
 	margin: auto;
 	background-color: RGB(189,108,110);
-	position: relative;
 	padding: 5x;
 }
 .socialDiv {
@@ -47,7 +43,6 @@ h2 {
 	height: 1000px;
 	margin: auto;
 	background-color: RGB(122,148,109);
-	position: relative;
 	padding: 5px;
 }
 .topTable {
@@ -132,4 +127,9 @@ h2 {
 .inlineMedia {
 	border:1px solid black;
 	height: 200px;
+}
+@media screen and (max-width: 800px) {
+	.mainDiv, .thingsDiv, .photosDiv, .socialDiv {
+	width: 100%;
+ 	}
 }
