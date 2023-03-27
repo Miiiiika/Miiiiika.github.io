@@ -21,6 +21,52 @@
 		<p>Seen below: the coolest fucking random number generator (between 0 and <input type="text" id="value" size="1" maxlength="3">) you have ever seen.</p>
 		<button onclick="randomNumber()">button!</button>
 		<p id="winning">Some number here</p>
+		<div class="snakeGame">
+			<h4 style="text-align:center;">Basic Snake Game (in dev)</h3>
+			<table style="margin:auto">
+				<tr>
+					<td></td>
+					<td><button onclick="northButton()">North</button></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><button onclick="westButton()">West</button></td>
+					<td></td>
+					<td><button onclick="eastButton()">East</button></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button onclick="southButton()">South</button></td>
+					<td></td>
+				</tr>
+			</table>
+			<table class="snakeTable">
+				<tr>
+					<td id="zeroZero">X</td>
+					<td id="oneZero">o</td>
+					<td id="twoZero">o</td>
+					<td id="threeZero">o</td>
+				</tr>
+				<tr>
+					<td id="zeroOne">o</td>
+					<td id="oneOne">o</td>
+					<td id="twoOne">o</td>
+					<td id="threeOne">o</td>
+				</tr>
+				<tr>
+					<td id="zeroTwo">o</td>
+					<td id="oneTwo">o</td>
+					<td id="twoTwo">o</td>
+					<td id="threeTwo">o</td>
+				</tr>
+				<tr>
+					<td id="zeroThree">o</td>
+					<td id="oneThree">o</td>
+					<td id="twoThree">o</td>
+					<td id="threeThree">o</td>
+				</tr>
+			</table>
+		</div>
 		<div class="cookieGame">
 			<h2 style="text-align:center">Clicker Game</h2>
 			<table class="clickerTable">

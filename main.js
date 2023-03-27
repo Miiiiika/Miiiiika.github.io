@@ -49,3 +49,53 @@ let funVar = function() {
 	update();
 }
 setInterval(funVar, 1000);
+
+//Snake game
+//Grid variable is a nested array.
+//"positionY" corresponds to the first array position, eg. positionY at 0 will give "grid[0][x]"
+//Each position in the nested array is the x position, so Y=1,X=2 gives "grid[1][2]" = "#twoOne"
+//I messed up the labels so that it displays X first, while the grid works on Y first, but its ok.
+let grid = [["#zeroZero","#oneZero","#twoZero","#threeZero"]];
+grid [1] = ["#zeroOne","#oneOne","#twoOne","#threeOne"]
+grid [2] = ["#zeroTwo","#oneTwo","#twoTwo","#threeTwo"]
+grid [3] = ["#zeroThree","#oneThree","#twoThree","#threeThree"]
+let positionX = 0;
+let positionY = 0;
+//Each function here does the following steps when the corresponding button is pressed:
+//1: checks to see if the user will move off the map. If it wont:
+//2: creates a variable called "oldY/X" stored as the current value of "positionX/Y"
+//3: increases "positionX/Y" by 1.
+//4: finds the old position of the X and changes it to an o
+//5: finds the new position of the X and changes it to an X
+let northButton = function() {
+	if (positionY >= 1) {
+		let oldY = positionY;
+		positionY -= 1;
+		document.querySelector(grid[oldY][positionX]).innerHTML = "o";
+		document.querySelector(grid[positionY][positionX]).innerHTML = "X";
+	}
+}
+let southButton = function() {
+	if (positionY <= 2) {
+		let oldY = positionY;
+		positionY += 1;
+		document.querySelector(grid[oldY][positionX]).innerHTML = "o";
+		document.querySelector(grid[positionY][positionX]).innerHTML = "X";
+	}
+}
+let westButton = function() {
+	if (positionX >= 1) {
+		let oldX = positionX;
+		positionX -= 1;
+		document.querySelector(grid[positionY][oldX]).innerHTML = "o";
+		document.querySelector(grid[positionY][positionX]).innerHTML = "X";
+	}
+}
+let eastButton = function() {
+	if (positionX <= 2) {
+		let oldX = positionX;
+		positionX += 1;
+		document.querySelector(grid[positionY][oldX]).innerHTML = "o";
+		document.querySelector(grid[positionY][positionX]).innerHTML = "X";
+	}
+}

@@ -74,3 +74,14 @@ button:hover {
 	width: 100%;
  	}
 }
+
+
+.snakeGame {
+	border: 1px solid lightgreen;
+	width: 20%;
+	height: auto;
+}
+.snakeTable, td {
+	border: 1px solid green;
+	margin: auto;
+}
