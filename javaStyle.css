@@ -1,7 +1,6 @@
 button:hover {
 	cursor: pointer;
 }
-
 .codeDiv {
 	border: 2px ridge lightgreen;
 	width: 65%;
@@ -57,8 +56,10 @@ button:hover {
 }
 #clickerBox {
 	cursor: pointer;
-	height: 100%;
-	width: 100%;
+}
+#clickerBox:hover {
+	height: 90px;
+	width: 90px;
 }
 .clickerTable, td {
 	margin: auto;

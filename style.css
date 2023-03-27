@@ -133,3 +133,8 @@ h2 {
 	width: 100%;
  	}
 }
+.picture {
+	float: left;
+	height: 200px;
+	width: 200px;
+}
