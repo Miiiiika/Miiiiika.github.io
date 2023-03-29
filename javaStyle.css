@@ -69,23 +69,24 @@ button:hover {
 	text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-	.cookieGame {
-		width: 100%;
- 	}
-}
-@media screen and (max-width: 1200px) {
-.snakeGame {
-		width: 100%;
-	}
-}
 
 .snakeGame {
 	border: 1px solid lightgreen;
 	width: 20%;
 	height: auto;
 }
+
 .snakeTable, td {
 	border: 1px solid green;
 	margin: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+	.cookieGame {
+		width: 100%;
+ 	}
+	.snakeGame {
+		width: 100%;
+	}
 }
