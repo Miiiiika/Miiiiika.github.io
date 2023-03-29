@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move X on Grid</title>
+	<style>
+		#grid {
+			display: grid;
+			grid-template-columns: repeat(5, 50px);
+			grid-template-rows: repeat(5, 50px);
+			gap: 10px;
+			margin: 50px auto;
+		}
+		#grid div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #ddd;
+			font-size: 24px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		#x {
+			background-color: red;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="grid">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<script>
+		const grid = document.getElementById('grid');
+		const cells = grid.querySelectorAll('div');
+		let xIndex = 0;
+		let yIndex = 0;
+
+		function moveX(e) {
+			// Check which arrow key was pressed
+			if (e.keyCode === 37 && xIndex > 0) { // left arrow
+				xIndex--;
+			} else if (e.keyCode === 38 && yIndex > 0) { // up arrow
+				yIndex--;
+			} else if (e.keyCode === 39 && xIndex < 4) { // right arrow
+				xIndex++;
+			} else if (e.keyCode === 40 && yIndex < 4) { // down arrow
+				yIndex++;
+			}
+
+			// Update the position of the X
+			const newX = grid.querySelector('#x');
+			if (newX) {
+				newX.removeAttribute('id');
+			}
+			const cellIndex = (yIndex * 5) + xIndex;
+			const newCell = cells[cellIndex];
+			newCell.setAttribute('id', 'x');
+
+			// Output the current position of the X to the console
+			console.log(`X is currently at position (${xIndex}, ${yIndex})`);
+		}
+
+		// Initialize the grid with the X in the top-left cell
+		const initialCell = cells[0];
+		initialCell.setAttribute('id', 'x');
+
+		// Add an event listener to the document to detect arrow key presses
+		document.addEventListener('keydown', moveX);
+	</script>
+</body>
+</html>
