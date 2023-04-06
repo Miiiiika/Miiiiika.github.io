@@ -128,13 +128,17 @@ h2 {
 	border:1px solid black;
 	height: 200px;
 }
-@media screen and (max-width: 800px) {
-	.mainDiv, .thingsDiv, .photosDiv, .socialDiv {
-	width: 100%;
- 	}
-}
 .picture {
 	float: left;
 	height: 200px;
 	width: 200px;
+}
+@media screen and (max-width: 800px) {
+	.mainDiv, .thingsDiv, .photosDiv, .socialDiv {
+	width: 100%;
+ 	}
+ 	#mikaTitle {
+ 		position: relative;
+ 		top: 27px;
+ 	}
 }

@@ -1,0 +1,80 @@
+let positionX = 0;
+let positionY = 0;
+let snakeLength = 0;
+let rememberX = [];
+let rememberY = [];
+//Creating a score variable and a random X and Y position for the score tile. Gets a random number between 1-3 so that the S never spawns on top of the X.
+let score = 0;
+let scoreY = Math.floor((Math.random() * 3) + 1);
+let scoreX = Math.floor((Math.random() * 3) + 1);
+document.querySelector(grid[scoreY][scoreX]).innerHTML = "S";
+
+/*
+moveFunction moves the X and scores if applicable.
+0: Take arguments from the buttons for directionX/Y. For example, north button means 0x, +1y, and so gives "moveFunction(0, 1)".
+1: Assign variables oldY/X to the current position values, assign potentialY/X to their values after moving.
+2: Check if the potential movement would bring the X out of bounds. Then, check the direction that's being moved: if directionX = 0, we know it's is moving on the Y axis, and vice-versa.
+3: modify positionX/Y by directionX/Y.
+4: Find the grid position of the old X and assign it an "o".
+5: Find the grid position of the new X and assign it an "X".
+6: If the X is on a scoring tile, increase score by 1.
+7: Assign random position to the next score tile (using a while loop ensures that the next tile is never the same tile as the current X), and then update the label for it.
+*/
+moveFunction = function(directionX, directionY) {
+	let oldY = positionY;
+	let oldX = positionX;
+	let potentialY = positionY + directionY;
+	let potentialX = positionX + directionX;
+	if (potentialY > -1 && potentialY < 4 && directionX == 0) {
+		positionY += directionY;
+		document.querySelector(grid[oldY][positionX]).innerHTML = "o";
+		document.querySelector(grid[positionY][positionX]).innerHTML = "X";
+	} else if (potentialX > -1 && potentialX < 4 && directionY == 0) {
+		positionX += directionX;
+		document.querySelector(grid[positionY][oldX]).innerHTML = "o";
+		document.querySelector(grid[positionY][positionX]).innerHTML = "X";
+	}
+	let snakePlusOne = snakeLength += 1;
+	if (rememberX.length > 0) {
+		rememberX.push(oldX);
+		rememberY.push(oldY);
+		for (let i = 0; i < snakePlusOne; i++) {
+			if (i <= snakeLength) {
+				document.querySelector(grid[rememberY[i]][rememberX[i]]).innerHTML = "X";
+				console.log(snakeLength);
+			} else {
+				document.querySelector(grid[rememberY[i]][rememberX[i]]).innerHTML = "o";
+				console.log("yeah");
+			}
+		}
+	}
+	checkScore();
+}
+let checkScore = function() {
+	if (positionY == scoreY && positionX == scoreX) {
+		score++;
+		snakeLength++;
+		if (rememberX.length == 0) {
+			rememberX.push(positionX);
+			rememberY.push(positionY);
+		}
+		document.querySelector("#score").innerHTML = score;
+		while (positionY == scoreY && positionX == scoreX) {
+			scoreY = Math.floor(Math.random() * 4);
+			scoreX = Math.floor(Math.random() * 4);
+		}
+		document.querySelector(grid[scoreY][scoreX]).innerHTML = "S";
+	}
+}
+let northButton = function() {
+	moveFunction(0, 1);
+}
+let southButton = function() {
+	moveFunction(0, -1);
+}
+let westButton = function() {
+	moveFunction(-1, 0);
+}
+let eastButton = function() {
+	moveFunction(1, 0);
+}
