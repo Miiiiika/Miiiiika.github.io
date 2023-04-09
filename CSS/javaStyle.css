@@ -56,14 +56,16 @@ button:hover {
 }
 #clickerBox {
 	cursor: pointer;
+	float: left;
 }
 #clickerBox:hover {
 	height: 90px;
 	width: 90px;
 }
-.clickerTable, td {
+.clickerTable {
 	margin: auto;
-	margin-top: 25%;
+	margin-top: 15%;
+	float: left;
 }
 #numberOfBoxes {
 	text-align: center;
@@ -74,6 +76,7 @@ button:hover {
 	border: 1px solid lightgreen;
 	width: 20%;
 	height: auto;
+	float: left;
 }
 
 .snakeTable, td {

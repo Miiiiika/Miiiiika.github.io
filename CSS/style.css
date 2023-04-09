@@ -7,9 +7,6 @@ body {
 .photosBody {
 	background-color: RGB(143,87,89);
 }
-.socialBody {
-	background-color: RGB(69,102,53);
-}
 h2 {
 	text-align:center;
 }
@@ -36,14 +33,6 @@ h2 {
 	margin: auto;
 	background-color: RGB(189,108,110);
 	padding: 5x;
-}
-.socialDiv {
-	border: 2px solid black;
-	width: 65%;
-	height: 1000px;
-	margin: auto;
-	background-color: RGB(122,148,109);
-	padding: 5px;
 }
 .topTable {
 	width: 100%;
@@ -78,7 +67,7 @@ h2 {
 	background-color: RGB(161,201,204);
 	height: 200px;
 	overflow-x: hidden;
-      overflow-y: auto;
+    overflow-y: auto;
 }
 .formalDiv {
 	padding: 5px;
@@ -88,13 +77,21 @@ h2 {
 	overflow-y: auto;
 	height: auto;
 }
-.whyDiv {
-	padding: 5px;
-	border: 1px solid black;
-	background-color: RGB(161,201,204);
-	overflow-x: hidden;
-	overflow-y: auto;
-	height: auto;
+.projectDiv {
+	border: 2px ridge lightgreen;
+	background-color: RGB(60,60,60);
+	color: white;
+	float: left;
+	width: 33%;
+	height: 150px;
+	overflow: scroll;
+}
+.projectDiv > a {
+	color: white;
+	background-color: RGB(80,80,80);
+}
+.projectHeader {
+	background-color: RGB(80,80,80);
 }
 #pfpImage, #pfpImage2 {
 	height: 200px;
