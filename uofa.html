@@ -9,7 +9,7 @@
 <body>
 <div id="mainContainer">
 	<div id="topContainer">
-		<img src="https://www.pcc.edu/instructional-support/wp-content/uploads/sites/17/2017/10/home-icon.png" style="height: 40px; width: 40px; float:left; margin-top: 30px; cursor: pointer;">
+		<a href="index.html"><img src="https://www.pcc.edu/instructional-support/wp-content/uploads/sites/17/2017/10/home-icon.png" style="height: 40px; width: 40px; float:left; margin-top: 30px; cursor: pointer;"></a>
 		<img src="images/UAlogo.jpg" style="height: 70%; margin-left: 10px; margin-top: 15px;">
 		<img src="images/settings.png" style="float: right; height: 40px; width: 40px; margin-top: 30px; cursor: pointer;">
 		<p style="float:left; position: relative; top: -5px; left: 5px; font-size: 30px; line-height: 10px; color: lightgrey;">.<br>.<br>.</p>
@@ -25,7 +25,21 @@
 		</div>
 	</div>
 	<div class="navBarContainer">
-			<span>Discover</span> <span>D2L Help</span> <span>My D2L Tools</span> <span>Caldendar</span> <span>Awards</span>
+			<span>Discover</span>
+			<button id="topButton1" onclick="helpButton()">D2L Help</button>
+				<div id="helpMenu">
+					<p>D2l Help Pages</p>
+					<p>Contact the D2L Team</p>
+				</div>
+			<button id="topButton2" onclick="toolsButton()">My D2L Tools</span></button>
+				<div id="toolsMenu">
+					<p>Chat</p>
+					<p>Locker</p>
+					<p>UA Email</p>
+					<p>Inclusive Access Opt Out</p>
+				</div>
+			<span>Caldendar</span>
+			<span>Awards</span>
 		</div>
 	<div id="classesContainer">
 		<div id="classesNav">
@@ -49,8 +63,7 @@
 		</div>
 	</div>
 </div>
-<script>
-
+<script src="Script/d2lScript.js">
 </script>
 </body>
 </html>

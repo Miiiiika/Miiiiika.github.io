@@ -78,7 +78,7 @@ h2 {
 	height: auto;
 }
 .projectDiv {
-	border: 2px ridge lightgreen;
+	border: 1px solid green;
 	background-color: RGB(60,60,60);
 	color: white;
 	float: left;
@@ -137,5 +137,8 @@ h2 {
  	#mikaTitle {
  		position: relative;
  		top: 27px;
+ 	}
+ 	.projectDiv {
+ 		width: 100%;
  	}
 }

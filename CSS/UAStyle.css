@@ -1,3 +1,6 @@
+body {
+	font-family: Arial;
+}
 #mainContainer {
 	width: 65%;
 	margin: auto;
@@ -14,11 +17,11 @@
 #classesContainer {
 	width: 70%;
 	background-color: white;
-	margin-top: 4%;
+	margin-top: 6%;
 }
 #classesNav {
 	margin-left: 1%;
-	width: 100%;
+	width: 90%;
 	height: 100px;
 	white-space: nowrap;
 	overflow-x: scroll;
@@ -48,9 +51,36 @@
 #otherIcons > img {
 	margin-left: 5px;
 }
+#helpMenu {
+	display: none;
+	padding: 1%;
+	position: absolute;
+	border: 1px solid lightblue;
+	border-radius: 5px;
+	background-color: white;
+	height: 80px;
+	width: 200px;
+	position: absolute;
+	left: 6%;
+}
+#toolsMenu {
+	display: none;
+	padding: 1%;
+	position: absolute;
+	border: 1px solid lightblue;
+	border-radius: 5px;
+	background-color: white;
+	height: 150px;
+	width: 200px;
+	position: absolute;
+	left: 18%;
+}
 .navBarContainer > span {
 	font-size: 20px;
 	margin-right: 3%;
+}
+.navBarContainer > label {
+	font-size: 20px;
 }
 .navBarContainer > span:hover {
 	color: blue;
@@ -64,7 +94,6 @@
 	background-color: white;
 	border: 1px solid lightblue;
 	border-radius: 5%;
-	font-family: Arial;
 	overflow: hidden;
 	transition: margin-top 500ms;
 }
@@ -95,4 +124,28 @@
 }
 .icon:hover{
 	cursor: pointer;
+}
+#topButton1 {
+	font-size: 20px;
+	margin-right: 3%;
+	border: none;
+	background-color: white;
+}
+#topButton1:hover {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+	background-color: white;
+}
+#topButton2 {
+	font-size: 20px;
+	margin-right: 3%;
+	border: none;
+	background-color: white;
+}
+#topButton2:hover {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+	background-color: white;
 }
