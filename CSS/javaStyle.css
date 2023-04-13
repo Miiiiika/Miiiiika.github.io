@@ -92,4 +92,15 @@ button:hover {
 	.snakeGame {
 		width: 100%;
 	}
+	.codeDiv {
+		width: 100%;
+	}
+	#clickerBox {
+		width: 50px;
+		height: 50px;
+	}
+	#clickerBox:hover {
+		width: 40px;
+		height: 40px;
+	}
 }

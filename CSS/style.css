@@ -51,6 +51,7 @@ h2 {
 .topData:hover {
 	border: 3px inset red;
 	text-align: center;
+	background-color: RGB(170,170,170);
 }
 .education {
 	background-color: RGB(161,201,204);
@@ -131,7 +132,7 @@ h2 {
 	width: 200px;
 }
 @media screen and (max-width: 800px) {
-	.mainDiv, .thingsDiv, .photosDiv, .socialDiv {
+	.mainDiv, .thingsDiv, .photosDiv, .javaDiv {
 	width: 100%;
  	}
  	#mikaTitle {

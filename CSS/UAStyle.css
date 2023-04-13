@@ -18,6 +18,7 @@ body {
 	width: 70%;
 	background-color: white;
 	margin-top: 6%;
+	position: relative;
 }
 #classesNav {
 	margin-left: 1%;
@@ -75,6 +76,30 @@ body {
 	position: absolute;
 	left: 18%;
 }
+#announcementsContainer {
+	height: 50rem;
+	width: 20%;
+	margin-top: -3%;
+	border: 1px solid black;
+	overflow: scroll;
+	padding: 1%;
+	position: absolute;
+	left: 70%;
+	top: 36%;
+}
+#annDropDown {
+	display: none;
+	border: 1px solid lightgrey;
+	position: absolute;
+	background-color: white;
+	left: 30%;
+	padding: 2%;
+	border-radius: 5px;
+}
+#annDropDown > span {
+	display: block;
+	border-bottom: 1px solid lightgrey;
+}
 .navBarContainer > span {
 	font-size: 20px;
 	margin-right: 3%;
@@ -88,20 +113,23 @@ body {
 	cursor: pointer;
 }
 .classes {
-	width: 31%;
+	width: 30%;
 	margin: 1%;
-	float: left;
 	background-color: white;
 	border: 1px solid lightblue;
 	border-radius: 5%;
 	overflow: hidden;
-	transition: margin-top 500ms;
+	transition: all 500ms;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 0;
 }
 .classes:hover {
-	margin-top: -1px;
+	margin-top: -2px;
 	cursor: pointer;
 	color: blue;
 	text-decoration: underline;
+	box-shadow: 5px 5px 5px lightgrey;
 }
 .classImage {
 	width: 100%;
@@ -124,6 +152,22 @@ body {
 }
 .icon:hover{
 	cursor: pointer;
+}
+.announcementDiv {
+	border-bottom: 1px solid lightgrey;
+}
+.announcementDiv > h3 {
+	color: #006fbf;
+}
+.announcementDiv > h3:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#anDDButton {
+	border: none;
+	background-color: white;
+	font-size: 20px;
+	display: inline;
 }
 #topButton1 {
 	font-size: 20px;
