@@ -1,8 +1,10 @@
 body {
 	font-family: Arial;
+	background-color: #f6f7f8;
 }
 #mainContainer {
-	width: 65%;
+	overflow: extend;
+	height: 100%;
 	margin: auto;
 	position: relative;
 }
@@ -11,14 +13,20 @@ body {
 	height: 100px;
 	float: top;
 	padding: 5px;
+	padding-left: 15%;
+	padding-right: 15%;
 	overflow: auto;
 	position: relative;
+	border-bottom: 1px solid lightgrey;
+	background-color: white;
 }
 #classesContainer {
-	width: 70%;
-	background-color: white;
-	margin-top: 6%;
+	width: 50%;
+	margin-top: 3%;
+	margin-left: 15%;
 	position: relative;
+	background-color: white;
+	border-radius: 1%;
 }
 #classesNav {
 	margin-left: 1%;
@@ -54,6 +62,7 @@ body {
 }
 #helpMenu {
 	display: none;
+	z-index: 1;
 	padding: 1%;
 	position: absolute;
 	border: 1px solid lightblue;
@@ -62,10 +71,11 @@ body {
 	height: 80px;
 	width: 200px;
 	position: absolute;
-	left: 6%;
+	left: 19%;
 }
 #toolsMenu {
 	display: none;
+	z-index: 1;
 	padding: 1%;
 	position: absolute;
 	border: 1px solid lightblue;
@@ -74,18 +84,18 @@ body {
 	height: 150px;
 	width: 200px;
 	position: absolute;
-	left: 18%;
+	left: 28%;
 }
 #announcementsContainer {
 	height: 50rem;
-	width: 20%;
-	margin-top: -3%;
-	border: 1px solid black;
+	width: 15%;
 	overflow: scroll;
 	padding: 1%;
 	position: absolute;
 	left: 70%;
-	top: 36%;
+	top: 16.5%;
+	background-color: white;
+	border-radius: 1%;
 }
 #annDropDown {
 	display: none;
@@ -99,6 +109,33 @@ body {
 #annDropDown > span {
 	display: block;
 	border-bottom: 1px solid lightgrey;
+}
+#brightspaceDiv {
+	background-color: white;
+	float: bottom;
+	border-radius: 1%;
+	width: 48%;
+	margin-left: 15%;
+	margin-top: 1%;
+	padding: 1%;
+}
+#blueDiv {
+	background-color: #1e5288;
+	color: white;
+	margin: auto;
+}
+#blueDiv > h3 {
+	text-decoration: underline;
+}
+#blueDiv > span {
+	margin-right: 2%;
+	font-size: 20px;
+}
+.navBarContainer {
+	box-shadow: 2px 2px 5px lightgrey;
+	border-bottom: 1px solid lightgrey;
+	padding-left: 15%;
+	background-color: white;
 }
 .navBarContainer > span {
 	font-size: 20px;
