@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D2L But Epic</title>
+	<link rel="stylesheet" href="CSS/epicD2L.css">
+	<link rel="icon" type="image/png" size="32x32" href="Images/UAlogosmall.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+	<div id="topBar">
+		<img src="https://d2l.arizona.edu/d2l/lp/navbars/6725/theme/viewimage/23499161/view?v=20.23.3.17072" style="width: 350px;margin-top: 1%;margin-left:1%; float:left;">
+		<h1 style="margin-left: 50%"><a href="index.html">Home</a></h1>
+		<img src="Images/homeicon.png" class="iconImage" onclick="goHome()">
+		<img src="Images/settingsicon.png" class="iconImage">
+		<img src="Images/notificon.png" class="iconImage">
+	</div>
+	<div id="classesBar">
+		<h1>Classes</h1>
+			<div class="class" onclick="selectClass(0)">
+				<img src="Images/castle.jpg">
+				<h3>CLASS 123</h3>
+				<p>Summer 2023</p>
+			</div>
+			<div class="class" onclick="selectClass(1)">
+				<img src="Images/castle.jpg">
+				<h3>CLASS 402</h3>
+				<p>Summer 2023</p>
+			</div>
+			<div class="class" onclick="selectClass(2)">
+				<img src="Images/castle.jpg">
+				<h3>CLASS 204</h3>
+				<p>Summer 2023</p>
+			</div>
+			<div class="class" onclick="selectClass(3)">
+				<img src="Images/castle.jpg">
+				<h3>CLASS 366</h3>
+				<p>Summer 2023</p>
+			</div>
+			<div class="class" onclick="selectClass(4)">
+				<img src="Images/castle.jpg">
+				<h3>CLASS 400</h3>
+				<p>Summer 2023</p>
+			</div>
+		</div>
+	<div id="announcements">
+		<h1>Announcements</h1>
+		<h3>Sample Announcement</h3>
+		<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3>Sample Announcement</h3>
+		<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3>Sample Announcement</h3>
+		<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div id="notifications">
+		<h1>Notifications</h1>
+		<h3>Class 123</h3>
+		<list>
+			<ul>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+			</ul>
+		</list>
+		<h3>Class 402</h3>
+		<list>
+			<ul>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+			</ul>
+		</list>
+		<h3>Class 204</h3>
+		<list>
+			<ul>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+			</ul>
+		</list>
+		<h3>Class 366</h3>
+		<list>
+			<ul>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+			</ul>
+		</list>
+		<h3>Class 400</h3>
+		<list>
+			<ul>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+				<li>(date) sample notification</li>
+			</ul>
+		</list>
+	</div>
+	<div id="links">
+		<h1>Useful links:</h1>	
+		<list>
+			<ul>
+				<li><a href="">Discover</a></li>
+				<li>D2L Help</li>
+					<list>
+						<ul>
+							<li><a href="">D2L Help Pages</a></li>
+							<li><a href="">Contact the D2L Team</a></li>
+						</ul>
+					</list>
+				<li>My D2L Tools</li>
+					<list>
+						<ul>
+							<li><a href="">Chat</a></li>
+							<li><a href="">Locker</a></li>
+							<li><a href="">UA Email</a></li>
+							<li><a href="">Inclusive Access Opt Out</a></li>
+						</ul>
+					</list>
+				<li><a href="">Calendar</a></li>
+				<li><a href="">Awards</a></li>
+			</ul>
+		</list>
+	</div>
+	<div id="brightspace">
+		<h1>Student Resource Brightspace</h1>
+	</div>
+	<div class="classContainer">
+		<h1>Class 123</h1>
+		<div class="classAnnouncements">
+			<h1>Announcements</h1>
+			<h3>Sample Announcement</h3>
+			<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="classAssignments">
+			<h1>Upcoming assignments</h1>
+			<table class="assignment">
+				<tr>
+					<th>Assignment Name</th>
+					<th>Due Date</th>
+					<th>Submission Status</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Submitted</td>
+					<td><a href="">90%</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="classSections">
+			<h1>Other Course Sections</h1>
+			<p><a href="">Content</a></p>
+			<p><a href="">Discussions</a></p>
+			<p><a href="">Quizzes</a></p>
+			<p><a href="">Classlist</a></p>
+			<p><a href="">UA Tools</a></p>
+			<p><a href="">Library Tools</a></p>
+		</div>
+	</div>
+	<div class="classContainer">
+		<h1>Class 402</h1>
+		<div class="classAnnouncements">
+			<h1>Announcements</h1>
+			<h3>Sample Announcement</h3>
+			<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="classAssignments">
+			<h1>Upcoming assignments</h1>
+			<table class="assignment">
+				<tr>
+					<th>Assignment Name</th>
+					<th>Due Date</th>
+					<th>Submission Status</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Submitted</td>
+					<td><a href="">90%</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="classSections">
+			<h1>Other Course Sections</h1>
+			<p><a href="">Content</a></p>
+			<p><a href="">Discussions</a></p>
+			<p><a href="">Quizzes</a></p>
+			<p><a href="">Classlist</a></p>
+			<p><a href="">UA Tools</a></p>
+			<p><a href="">Library Tools</a></p>
+		</div>
+	</div>
+	<div class="classContainer">
+		<h1>Class 204</h1>
+		<div class="classAnnouncements">
+			<h1>Announcements</h1>
+			<h3>Sample Announcement</h3>
+			<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="classAssignments">
+			<h1>Upcoming assignments</h1>
+			<table class="assignment">
+				<tr>
+					<th>Assignment Name</th>
+					<th>Due Date</th>
+					<th>Submission Status</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Submitted</td>
+					<td><a href="">90%</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="classSections">
+			<h1>Other Course Sections</h1>
+			<p><a href="">Content</a></p>
+			<p><a href="">Discussions</a></p>
+			<p><a href="">Quizzes</a></p>
+			<p><a href="">Classlist</a></p>
+			<p><a href="">UA Tools</a></p>
+			<p><a href="">Library Tools</a></p>
+		</div>
+	</div>
+	<div class="classContainer">
+		<h1>Class 366</h1>
+		<div class="classAnnouncements">
+			<h1>Announcements</h1>
+			<h3>Sample Announcement</h3>
+			<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="classAssignments">
+			<h1>Upcoming assignments</h1>
+			<table class="assignment">
+				<tr>
+					<th>Assignment Name</th>
+					<th>Due Date</th>
+					<th>Submission Status</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Submitted</td>
+					<td><a href="">90%</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="classSections">
+			<h1>Other Course Sections</h1>
+			<p><a href="">Content</a></p>
+			<p><a href="">Discussions</a></p>
+			<p><a href="">Quizzes</a></p>
+			<p><a href="">Classlist</a></p>
+			<p><a href="">UA Tools</a></p>
+			<p><a href="">Library Tools</a></p>
+		</div>
+	</div>
+	<div class="classContainer">
+		<h1>Class 400</h1>
+		<div class="classAnnouncements">
+			<h1>Announcements</h1>
+			<h3>Sample Announcement</h3>
+			<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="classAssignments">
+			<h1>Upcoming assignments</h1>
+			<table class="assignment">
+				<tr>
+					<th>Assignment Name</th>
+					<th>Due Date</th>
+					<th>Submission Status</th>
+					<th>Grade</th>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Submitted</td>
+					<td><a href="">90%</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><a href="">Sample Assignment</a></td>
+					<td>Date Here</td>
+					<td>Not Submitted</td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<div class="classSections">
+			<h1>Other Course Sections</h1>
+			<p><a href="">Content</a></p>
+			<p><a href="">Discussions</a></p>
+			<p><a href="">Quizzes</a></p>
+			<p><a href="">Classlist</a></p>
+			<p><a href="">UA Tools</a></p>
+			<p><a href="">Library Tools</a></p>
+		</div>
+	</div>
+</body>
+<script src="Script/epicD2L.js"></script>
+</html>
