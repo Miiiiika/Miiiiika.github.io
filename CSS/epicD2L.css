@@ -12,6 +12,7 @@ body {
 	position: absolute;
 	top: 0;
 	background-color: #8998a4;
+	overflow: hidden;
 }
 #classesBar {
 	border: 2px solid #0c234b;
@@ -59,6 +60,7 @@ body {
 	position: absolute;
 	top: 18%;
 	left: 75%;
+	overflow: scroll;
 }
 #brightspace {
 	border: 2px solid #0c234b;
@@ -70,6 +72,13 @@ body {
 	position: absolute;
 	top: 58.5%;
 	left: 75%;
+	overflow: scroll;
+}
+#UAlogo {
+	width: 350px;
+	margin-top: 1%;
+	margin-left:1%;
+	float:left;
 }
 .class {
 	border: 2px solid #0c234b;
@@ -106,7 +115,7 @@ body {
 	height: 30px;
 	float: right;
 	margin-right: 1%;
-	margin-top: -1%;
+	margin-top: 3%;
 	cursor: pointer;
 }
 .classContainer {
@@ -124,12 +133,78 @@ body {
 	float: left;
 	margin-right: 1%;
 	padding: 1%;
+	overflow: scroll;
 }
 .assignment {
 	border: 1px solid black;
 	width: 100%;
 }
+#brightspace > span{
+	margin-right: 5%;
+}
 td {
 	border: 1px solid black;
 	padding: 1%;
+}
+#home {
+	margin-left:50%;
+}
+#mobileClasses2 {
+	display: none;
+}
+@media screen and (max-width: 800px) {
+	#topBar {
+		height: 50px;
+	}
+	#UAlogo {
+		width: 150px;
+		margin-top: 1%;
+		margin-left:1%;
+		float:left;
+	}
+	.iconImage {
+		width: 20px;
+		height: 20px;
+		position: relative;
+		bottom: 15px;
+		right: 5px;
+	}
+	#classesBar {
+		height: 100%;
+		width: 100%;
+		display: none;
+	}
+	#classesBar > h1 {
+		text-align: center;
+		margin-top: -50px;
+	}
+	#announcements, #notifications, #links, #brightspace {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		left: 0;
+		border-top: 2px solid #0c234b;
+	}
+	#mobileClasses2 {
+		display: inline;
+		position: relative;
+		top: 15px;
+		left: 15px;
+		color: #0c234b;
+		cursor: pointer;
+	}
+	.classContainer {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 80%;
+	width: 100%;
+	}
+	.classContainer > div {
+		border: 2px solid #0c234b;
+		width: 100%;
+		padding: 1%;
+		overflow: scroll;
+	}
 }

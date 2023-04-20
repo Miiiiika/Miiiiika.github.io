@@ -8,8 +8,8 @@
 </head>
 <body>
 	<div id="topBar">
-		<img src="https://d2l.arizona.edu/d2l/lp/navbars/6725/theme/viewimage/23499161/view?v=20.23.3.17072" style="width: 350px;margin-top: 1%;margin-left:1%; float:left;">
-		<h1 style="margin-left: 50%"><a href="index.html">Home</a></h1>
+		<img src="https://d2l.arizona.edu/d2l/lp/navbars/6725/theme/viewimage/23499161/view?v=20.23.3.17072" id="UAlogo">
+		<div id="mobileClasses2" onclick="openClasses()"><span id="classesStatus">Open</span> Classes Selector</div>
 		<img src="Images/homeicon.png" class="iconImage" onclick="goHome()">
 		<img src="Images/settingsicon.png" class="iconImage">
 		<img src="Images/notificon.png" class="iconImage">
@@ -17,27 +17,27 @@
 	<div id="classesBar">
 		<h1>Classes</h1>
 			<div class="class" onclick="selectClass(0)">
-				<img src="Images/castle.jpg">
+				<img src="Images/castle.jpg" class="classImage">
 				<h3>CLASS 123</h3>
 				<p>Summer 2023</p>
 			</div>
 			<div class="class" onclick="selectClass(1)">
-				<img src="Images/castle.jpg">
+				<img src="Images/castle.jpg" class="classImage">
 				<h3>CLASS 402</h3>
 				<p>Summer 2023</p>
 			</div>
 			<div class="class" onclick="selectClass(2)">
-				<img src="Images/castle.jpg">
+				<img src="Images/castle.jpg" class="classImage">
 				<h3>CLASS 204</h3>
 				<p>Summer 2023</p>
 			</div>
 			<div class="class" onclick="selectClass(3)">
-				<img src="Images/castle.jpg">
+				<img src="Images/castle.jpg" class="classImage">
 				<h3>CLASS 366</h3>
 				<p>Summer 2023</p>
 			</div>
 			<div class="class" onclick="selectClass(4)">
-				<img src="Images/castle.jpg">
+				<img src="Images/castle.jpg" class="classImage">
 				<h3>CLASS 400</h3>
 				<p>Summer 2023</p>
 			</div>
@@ -132,6 +132,11 @@
 	</div>
 	<div id="brightspace">
 		<h1>Student Resource Brightspace</h1>
+		<h3>Student Resources Brightspace</h3>
+			<h3>Getting Help with D2L</h3>
+			<span>D2L Help Pages for Students</span><span>Online D2L Help Request Form</span>
+			<h3>Other Useful Links</h3>
+			<span>UAccess</span><span>24/7 IT Support</span><span>VCAT</span><span>OSCR</span><span>Student Booklist</span><span>Think Tank</span><span>SOS</span><span>Student Course Surveys</span><span>DRC</span><span>Mental Health Resources</span>
 	</div>
 	<div class="classContainer">
 		<h1>Class 123</h1>
@@ -158,32 +163,14 @@
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
 					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
+					<td>Submitted</td>
+					<td><a href="">50%</td>
 				</tr>
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
 					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><a href="">Sample Assignment</a></td>
-					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><a href="">Sample Assignment</a></td>
-					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><a href="">Sample Assignment</a></td>
-					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
+					<td>Submitted</td>
+					<td><a href="">87%</a></td>
 				</tr>
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
@@ -214,7 +201,7 @@
 		<div class="classAnnouncements">
 			<h1>Announcements</h1>
 			<h3>Sample Announcement</h3>
-			<p>This is a bunch of sample text for an announcement. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>AAAAAAA AAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAA AAAAA AAAAAA AAAAAAAAAAAAAAAA AAAAAAA AAAAAAAAAAAAAAA AAAAAAAA AAAAA AAAAAAAAAAAAAAAAAA AA AAAH</p>
 		</div>
 		<div class="classAssignments">
 			<h1>Upcoming assignments</h1>
@@ -234,44 +221,26 @@
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
 					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
+					<td>Submitted</td>
+					<td><a href="">60%</a></td>
 				</tr>
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
 					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
+					<td>Submitted</td>
+					<td><a href="">60%</a></td>
 				</tr>
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
 					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
+					<td>Submitted</td>
+					<td><a href="">60%</a></td>
 				</tr>
 				<tr>
 					<td><a href="">Sample Assignment</a></td>
 					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><a href="">Sample Assignment</a></td>
-					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><a href="">Sample Assignment</a></td>
-					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td><a href="">Sample Assignment</a></td>
-					<td>Date Here</td>
-					<td>Not Submitted</td>
-					<td></td>
+					<td>Submitted</td>
+					<td><a href="">90%</a></td>
 				</tr>
 			</table>
 		</div>
