@@ -1,4 +1,4 @@
-console.log("hi mom!"); //confirm JS running
+console.log("A Wooden Horse"); //confirm JS running
 //Defining page elements as variables
 const announcements = document.getElementById("announcements");
 const notifications = document.getElementById("notifications");
@@ -8,42 +8,46 @@ const homePage = [announcements, notifications, links, brightspace]; //all homep
 const classesBar = document.getElementById("classesBar");
 const classesStatus = document.getElementById("classesStatus");
 const classes = document.getElementsByClassName("class"); //all classes
+let openedClasses = document.getElementsByClassName("selectedClass");
 const classImages = document.getElementsByClassName("classImage");
-const classesContainers = document.getElementsByClassName("classContainer"); //All class main pages
+let openedImages = document.getElementsByClassName("selectedClassImage");
+let hiddenClassContainers = document.getElementsByClassName("hiddenClassContainer");
+let openClassesContainers = document.getElementsByClassName("classContainer"); //All class main pages
 let classSelected = false;
-let classesOpened = false;
+let classBarOpened = false;
 let currentSelect;
+let classHidden = false;
 //Function to select class.
 const selectClass = function(classDiv) {
 	if (classSelected == false) { //no class selected, display the class just clicked on
 		for (let i = 0; i < homePage.length; i++) { //hide homepage
-			homePage[i].style.display = "none";
+			homePage[i].className = "closedHome";
 		}
-		classes[classDiv].style.backgroundColor = "#6682c6";
-		classImages[classDiv].style.filter = "brightness(100%)";
-		classesContainers[classDiv].style.display = "block"; //display selected class
+		classes[classDiv].className = "selectedClass";
+		classImages[classDiv].className = "selectedClassImage";
+		hiddenClassContainers[classDiv].className = "classContainer";
 		classSelected = true;
 		closeClasses();
 		currentSelect = classDiv;
 	} else if (classSelected == true && currentSelect !== classDiv) { //class already selected, user clicked on a different class
-		for (let i = 0; i < classes.length; i++) { //show classes as unselected, close any class divs that are open
-			classes[i].style.backgroundColor = "#556ca5";
-			classImages[i].style.filter = "brightness(70%)";
-			classesContainers[i].style.display = "none";
+		openedClasses[0].className = "class";
+		openedImages[0].className = "classImage";
+		if (classHidden == false) { //Ugly but it fixes the problem on mobile lol Ill make it nicer better
+			openClassesContainers[0].className = "hiddenClassContainer";
 		}
-		classes[classDiv].style.backgroundColor = "#6682c6";
-		classImages[classDiv].style.filter = "brightness(100%)";
-		classesContainers[classDiv].style.display = "block"; //display selected class
+		classes[classDiv].className = "selectedClass";
+		classImages[classDiv].className = "selectedClassImage";
+		hiddenClassContainers[classDiv].className = "classContainer";
 		currentSelect = classDiv;
 		closeClasses();
 		classSelected = true;
 	} else if (classSelected == true && currentSelect == classDiv) { //user clicked on same class currently selected (display home)
-		for (let i = 0; i < homePage.length; i++) { //reveal Homepage
-			homePage[i].style.display = "block";
+		openedClasses[0].className = "class";
+		openedImages[0].className = "classImage";
+		openClassesContainers[0].className = "hiddenClassContainer";
+		for (let i = 0; i < homePage.length; i++) { //show homepage
+			homePage[i].className = "openedHome";
 		}
-		classesContainers[classDiv].style.display = "none"; //close current selected class
-		classImages[classDiv].style.filter = "brightness(70%)";
-		classes[classDiv].style.backgroundColor = "#556ca5";
 		classSelected = false;
 		currentSelect = -1; //no class will be -1, nothing selected.
 	} 
@@ -51,41 +55,42 @@ const selectClass = function(classDiv) {
 //Show home page on home icon click
 const goHome = function() {
 	for (let i = 0; i < homePage.length; i++) { //reveal Homepage
-		homePage[i].style.display = "block";
+		homePage[i].className = "openedHome";
 	}
-	for (let i = 0; i < classes.length; i++) { //show classes as unselected
-		classes[i].style.backgroundColor = "#556ca5";
-		classesContainers[i].style.display = "none";
-	}
+	openedClasses[0].className = "class";
+	openedImages[0].className = "classImage";
 	classSelected = false;
 	currentSelect = -1; //no class will be -1, nothing selected.
 }
 
-const openClasses = function() { //use screen.width to fix classes not opening properly.
-	if (classesOpened == false) {
-		for (let i = 0; i < homePage.length; i++) { //reveal Homepage
-			homePage[i].style.display = "none";
-			classesContainers[i].style.display = "none";
+// Used on mobile aspect ratios. The classes selector (sidebar on desktop) is toggled.
+const openClasses = function() {
+	if (classBarOpened == false) {
+		for (let i = 0; i < homePage.length; i++) { //hide Homepage
+			homePage[i].className = "closedHome";
 		}
-	classesBar.style.display = "block";
-	classesStatus.innerHTML = "Close";
-	classesOpened = true;
+		if (openClassesContainers.length > 0) {
+			openClassesContainers[0].className = "hiddenClassContainer"
+			classHidden = true;
+		}
+		classesBar.style.display = "block";
+		classesStatus.innerHTML = "Close";
+		classBarOpened = true;
 	} else {
 		for (let i = 0; i < homePage.length; i++) { //reveal Homepage
-			homePage[i].style.display = "block";
-			classesContainers[i].style.display = "none";
+			homePage[i].className = "openHome";
 		}
 		classesBar.style.display = "none";
 		classesStatus.innerHTML = "Open"
-		classesOpened = false;
+		classBarOpened = false;
 	}
 }
 
-const closeClasses = function() {
+const closeClasses = function() { //Closes class bar on mobile.
 	console.log(window.innerWidth)
 	if (window.innerWidth < 800) {
 		classesBar.style.display = "none";
 		classesStatus.innerHTML = "Open"
-		classesOpened = false;
+		classBarOpened = false;
 	} 
 }
