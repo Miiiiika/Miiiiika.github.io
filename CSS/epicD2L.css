@@ -11,7 +11,7 @@ td {
 /* topBar content */
 /* ------------- */
 
-#topBar { /* Contains UA logo, account, settings, home, notifications icon, and on mobile devices, button to show classes*/
+#topBar {
 	border: 2px solid #0c234b;
 	background-color: #8998a4;
 	width: 100%;

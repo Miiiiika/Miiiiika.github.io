@@ -123,6 +123,7 @@ h2 {
 .mediaImage {
 	height:200px;
 	width:200px;
+	padding-right: 5px;
 	float: left;
 }
 .inlineMedia {
