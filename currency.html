@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mika's Currency Converter</title>
+    <link rel="stylesheet" href="CSS/currencyStyle.css">
+    <link rel="icon" href="Images/pfp.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="mainDiv">
+    <h1>Currency converter!</h1>
+    <h3>Convert: <input type="text" id="firstAmount"><br></h3>
+    <input type="radio" id="dollars" name="currency1" value="DOLLAR">
+    <label for="dollars">USD</label>
+    <input type="radio" id="pounds" name="currency1" value="POUND">
+    <label for="pounds">British Pounds</label>
+    <input type="radio" id="yen" name="currency1" value="YEN">
+    <label for="yen">Japanese Yen</label>
+    <h3>To:<br></h3>
+    <input type="radio" id="dollars2" name="currency2" value="DOLLAR">
+    <label for="dollars2">USD</label>
+    <input type="radio" id="pounds2" name="currency2" value="POUND">
+    <label for="pounds2">British Pounds</label>
+    <input type="radio" id="yen2" name="currency2" value="YEN">
+    <label for="yen2">Japanese Yen</label>
+    <br>
+    <br>
+    <button id="submitButton" onclick="submit()">Convert!</button>
+    <p>Result: <span id="result"></span></p>
+    <p>*Results will only be accurate to conversion rates from 4/24/2023.</p>
+    <a href="index.html">Home</a>
+</div>
+</body>
+<script src="Script/currencyScript.js"></script>
+</html>

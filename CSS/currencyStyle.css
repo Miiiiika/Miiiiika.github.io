@@ -1,0 +1,45 @@
+body {
+    background-color:rgb(86, 81, 126);
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 5em;
+}
+h3 {
+    font-size: 3em;
+}
+p, a {
+    font-size: 2em;
+}
+label {
+    font-size: 2em;
+    cursor: pointer;
+}
+button {
+    font-size: 2em;
+    background-color:rgb(186, 181, 230);
+    border: 2px outset red;
+}
+button:hover {
+    cursor: pointer;
+    background-color:rgb(179, 173, 229);
+    border: 2px inset red;
+}
+#mainDiv {
+    border: 3px ridge red;
+    background-color: rgb(143, 136, 194);
+    text-align: center;
+    padding: 2px;
+}
+#firstAmount {
+    border: 1px solid red;
+    font-size: 1em;
+}

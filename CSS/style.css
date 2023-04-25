@@ -1,11 +1,8 @@
 body {
 	background-color: RGB(55,89,92);
 }
-.thingsBody {
+#thingsBody {
 	background-color: RGB(93,105,166);
-}
-.photosBody {
-	background-color: RGB(143,87,89);
 }
 h2 {
 	text-align:center;
@@ -15,7 +12,6 @@ h2 {
 	width: 65%;
 	height: 100%;
 	margin: auto;
-	background-color: RGB(137,171,173);
 	padding: 5px;
 }
 .thingsDiv {
@@ -26,13 +22,11 @@ h2 {
 	background-color: RGB(167,175,217);
 	padding: 5px;
 }
-.photosDiv {
-	border: 2px solid black;
-	width: 65%;
-	height: 1000px;
-	margin: auto;
-	background-color: RGB(189,108,110);
-	padding: 5x;
+#index {
+	background-color: RGB(137,171,173);
+}
+#coolThings {
+	background-color: RGB(167,175,217);
 }
 .topTable {
 	width: 100%;
@@ -138,7 +132,8 @@ h2 {
 }
 @media screen and (max-width: 800px) {
 	.mainDiv, .thingsDiv, .photosDiv, .javaDiv {
-	width: 100%;
+		width: 100%;
+		margin-left: -1%;
  	}
  	#mikaTitle {
  		position: relative;

@@ -44,7 +44,9 @@ const selectClass = function(classDiv) {
 	} else if (classSelected == true && currentSelect == classDiv) { //user clicked on same class currently selected (display home)
 		openedClasses[0].className = "class";
 		openedImages[0].className = "classImage";
-		openClassesContainers[0].className = "hiddenClassContainer";
+		if (classHidden == false) { //Ugly but it fixes the problem on mobile lol Ill make it nicer better
+			openClassesContainers[0].className = "hiddenClassContainer";
+		}
 		for (let i = 0; i < homePage.length; i++) { //show homepage
 			homePage[i].className = "openedHome";
 		}
