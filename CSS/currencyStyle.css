@@ -43,3 +43,14 @@ button:hover {
     border: 1px solid red;
     font-size: 1em;
 }
+@media screen and (max-width: 800px) {
+	h1 {
+        font-size: 2em;
+    }
+    h3, p, a, label, button {
+        font-size: 1em;
+    }
+    #mainDiv {
+        width: 100%;
+    }
+}
